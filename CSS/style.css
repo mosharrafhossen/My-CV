@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: green;
+}
+
+.container {
+    max-width: 55%;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+
+.Education, .Skill, .Experience {
+    background-color: #00ff73;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Education:hover, .Skill:hover, .Experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.Education h2, .Skill h2, .Experience h2 {
+    background-color: #b8860b;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Education ul, .Skill ul, .Experience ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+
+
+.contact-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 14px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    .header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .Education, .Skill, .Experience {
+        padding: 20px;
+    }
+
+    .Education h2, .Skill h2, .Experience h2 {
+        font-size: 1.1rem;
+    }
+
+    .Education ul li, .Skill ul li, .Experience ul li {
+        font-size: 0.95rem;
+    }
+
+    .contact-btn {
+        width: 80%;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
